@@ -1,25 +1,62 @@
 {% extends 'main.html' %}
-
+{% load static %}
 {% block content %}
 
 
 {% if page == 'register' %}
-    <h1>Register User</h2>
 
-        <form method="POST" action="{% url 'register' %}">
-            {% csrf_token %}
-            {{form.as_p}}
-            <input type="submit" value="Register User">
-        </form>
+<div class="auth">
+  <div class="card">
+    <div class="auth__header text-center">
+      <a href="/">
+        <img src="{% static 'images/icon.svg' %}" alt="icon" />
+      </a>
+      <h3>Register an Account</h3>
+      <p>Create a new developer account</p>
+    </div>
 
-    <p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
+    <form class="form auth__form" method="POST" action="{% url 'register' %}" >
+        {% csrf_token %}
+        {% for field in form  %}
+      <div class="form__field">
+        <label for="formInput#text">{{field.label}}</label>
+        {{field}}
+        
+        {% comment %} {% if field.help_text %}
+
+            <small>{{field.help_text}}</small>
+        
+        {% endif %} {% endcomment %}
+
+        {% for error in field.errors  %}
+            <p style="color: red;">{{error}}</p>
+        {% endfor %}
+
+
+      </div>
+       {% endfor %}
+
+
+      <div class="auth__actions">
+        <input class="btn btn--sub btn--lg" type="submit" value="Sign  In" />
+      </div>
+    </form>
+    <div class="auth__alternative">
+      <p>Already have an Account?</p>
+      <a href="{% url 'login' %}">Log In</a>
+    </div>
+  </div>
+</div>
+
+
+
 
 {% else %}
 <div class="auth">
     <div class="card">
       <div class="auth__header text-center">
         <a href="/">
-          <img src="images/icon.svg" alt="icon" />
+          <img src="{% static 'images/icon.svg' %}" alt="icon" />
         </a>
         <h3>Account Login</h3>
         <p>Hello Developer, Welcome Back!</p>
