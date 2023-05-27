@@ -14,11 +14,11 @@ def projects(request):
 
 
 def project(request, pk):
-    projectobj = Project.objects.get(id=pk)
+    projectObj = Project.objects.get(id=pk)
     context = {
-        'projectobj': projectobj,
-
+        'project': projectObj,
     }
+    print(projectObj)
     return render(request, 'projects/single-project.html', context)
 
 
