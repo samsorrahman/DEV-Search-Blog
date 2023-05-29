@@ -193,7 +193,10 @@ def inbox(request):
 
 @login_required(login_url='login')
 def viewMessage(request, pk):
-    context = {
+    profile = request.user.profile
+    message = profile.messages.get(id=pk)
 
+    context = {
+        'message': message,
     }
     return render(request, 'users/message.html', context)
