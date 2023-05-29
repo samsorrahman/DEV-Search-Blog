@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import logout, login, authenticate
-from .models import Profile
+from .models import Profile, Message
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 # Create your views here.
@@ -181,8 +181,11 @@ def deleteSkill(request, pk):
 
 @login_required(login_url='login')
 def inbox(request):
-
+    profile = request.user.profile
+    messageRequest = profile.message.all()
+    unreadCount = messageRequest.filter(is_read=False).count()
     context = {
-
+        'messageRequest': messageRequest,
+        'unreadCount': unreadCount
     }
     return render(request, 'users/inbox.html', context)
