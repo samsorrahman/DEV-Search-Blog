@@ -2,7 +2,6 @@ from django.shortcuts import render, redirect
 from . models import Project, Tag
 from .forms import ProjectForm, ReviewForm
 from django.contrib.auth.decorators import login_required
-from django.db.models import Q
 from .utils import searchProject, paginateProject
 from django.contrib import messages
 # Create your views here.
@@ -10,13 +9,10 @@ from django.contrib import messages
 
 def projects(request):
     projects, search_query = searchProject(request)
-    custom_range, projects = paginateProject(request, projects,  6)
+    custom_range, projects = paginateProject(request, projects, 6)
 
-    context = {
-        'projects': projects,
-        'search_query': search_query,
-        'custom_range': custom_range,
-    }
+    context = {'projects': projects,
+               'search_query': search_query, 'custom_range': custom_range}
     return render(request, 'projects/projects.html', context)
 
 
