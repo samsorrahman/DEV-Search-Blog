@@ -14,3 +14,5 @@ https://github.com/samsorrahman/DEV-Search-Blog/assets/112087807/38c2177d-e5f9-4
 ![5](https://github.com/samsorrahman/DEV-Search-Blog/assets/112087807/c11b4d93-f7ed-4165-a907-a9b1c5daf4c8)
 
 ![3](https://github.com/samsorrahman/DEV-Search-Blog/assets/112087807/06cc2a8c-3121-4a66-8d24-5a506474236b)
+![8](https://github.com/samsorrahman/DEV-Search-Blog/assets/112087807/4dfb34b4-6025-411f-b20d-fdce4981cba0)
+![8](https://github.com/samsorrahman/DEV-Search-Blog/assets/112087807/ea38cbce-6b49-4f2a-9cf4-282e284e6f5d)
