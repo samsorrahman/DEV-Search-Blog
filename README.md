@@ -10,3 +10,7 @@ https://github.com/samsorrahman/DEV-Search-Blog/assets/112087807/38c2177d-e5f9-4
 ![2](https://github.com/samsorrahman/DEV-Search-Blog/assets/112087807/16a63780-f207-4569-8fec-7e7dc6fb0a42)
 
 ![4](https://github.com/samsorrahman/DEV-Search-Blog/assets/112087807/4b523a09-a61e-41fe-bbd3-d25e629a4bd0)
+
+![5](https://github.com/samsorrahman/DEV-Search-Blog/assets/112087807/c11b4d93-f7ed-4165-a907-a9b1c5daf4c8)
+
+![3](https://github.com/samsorrahman/DEV-Search-Blog/assets/112087807/06cc2a8c-3121-4a66-8d24-5a506474236b)
