@@ -89,5 +89,3 @@ virtualenv==20.23.0
 webencodings==0.5.1
 Werkzeug==2.2.3
 whitenoise==5.2.0
-xhtml2pdf==0.2.11
-youtube-dl==2021.4.17
