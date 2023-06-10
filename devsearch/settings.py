@@ -175,13 +175,13 @@ USE_TZ = True
 
 'corsheaders.middleware.CorsMiddleware',
 
-
+#Email configurations
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'rahmansamsor82@gmail.com'
-EMAIL_HOST_PASSWORD = 'ahquzaspwlvrcndd'
+EMAIL_HOST_USER = provide your won email
+EMAIL_HOST_PASSWORD = write your email password here
 
 
 # Static files (CSS, JavaScript, Images)
